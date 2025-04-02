@@ -39,7 +39,7 @@ export default function Home() {
       คุณเลือกหัวข้อ {topic}
       {flashcards ? <div className="flex flec-wrap">
         {flashcards.map((flashcard) => (
-          <div className="bg-white p-4 rounded-lg shadow-md">
+          <div className="bg-white p-4 rounded-lg shadow-md" key={flashcard.id}>
             <h2 className="text-lg font-bold">{flashcard.word}</h2>
             </div>
         ) )}
