@@ -37,7 +37,7 @@ export default function Home() {
         {loading ? 'Loading..' : 'สร้าง Flash Card'}
         </button>
       คุณเลือกหัวข้อ {topic}
-      {flashcards ? <div className="flex flec-wrap">
+      {flashcards ? <div className="flex flex-wrap">
         {flashcards.map((flashcard) => (
           <div className="bg-white p-4 rounded-lg shadow-md" key={flashcard.id}>
             <h2 className="text-lg font-bold">{flashcard.word}</h2>
